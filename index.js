@@ -53,10 +53,19 @@ Using the burger object below do the following:
 export const burger = {
   name: "Burger", 
   price: 18, 
-  category: "Lunch", 
-  /*Your code here*/
+  category: "Lunch",
+  teacher:.75,
+  student:.75,
+  public:.90,
+  discount: function(key){
+    if(key==="teacher"||"student"){
+      return this.teacher*this.price;
+      }else if(key==="public"){
+      return this.public*this.price;
+    }
+  }
 }
-
+burger.discount("teacher")
 
 
 ///////////////Reviews (MVP)///////////////////
@@ -71,12 +80,13 @@ const reviews = [
     {name: "Reyna", rating: 3.5, feedback: ""},
 ]
 
+
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Using the reviews array above:
   1. log only Julius' feedback to the console - no function needed 
 */
 
-
+console.log(reviews[5].feedback);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -108,8 +118,8 @@ Use the getReviewByIndex function below to do the following:
 */
 
 
-function getReviewByIndex(/*Your code here*/) {
-  /*Your code here*/
+function getReviewByIndex(array,index) {
+  return '${array[index].name} gave the restaurant a ${array[index].rating} star review, and their feedback was: ${array[index].feedback}"';
 }
 
 
@@ -130,7 +140,7 @@ Use the getLastReview function below to do the following:
 function getLastReview(/*Your code here*/) {
   /*Your code here*/
 } 
-
+console.log(getLastReview(reviews,))
 
 
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
