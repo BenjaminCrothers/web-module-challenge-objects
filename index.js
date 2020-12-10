@@ -58,14 +58,14 @@ export const burger = {
   student:.75,
   public:.90,
   discount: function(key){
-    if(key==="teacher"||"student"){
+    if(key==="teacher"||key==="student"){
       return this.teacher*this.price;
       }else if(key==="public"){
       return this.public*this.price;
     }
   }
 }
-burger.discount("teacher")
+burger.discount("public")
 
 
 ///////////////Reviews (MVP)///////////////////
@@ -95,7 +95,8 @@ Using the reviews array above do the following: (no function needed)
   2. log the whole array to the console, make sure the new review is inside of it   
 */
 
-
+reviews.push(name."Ben",rating."1")
+console.log(reviews);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Reyna's feedback is missing! Use what you know to do the following: (no function needed) 
