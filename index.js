@@ -95,7 +95,8 @@ Using the reviews array above do the following: (no function needed)
   2. log the whole array to the console, make sure the new review is inside of it   
 */
 
-reviews.push(name."Ben",rating."1")
+// Task 4
+reviews.push({name: "Ben",rating: 1,feedback: "Super Great!"});
 console.log(reviews);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
