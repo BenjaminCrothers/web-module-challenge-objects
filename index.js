@@ -121,7 +121,7 @@ Use the getReviewByIndex function below to do the following:
 
 
 function getReviewByIndex(array,index) {
-  return "${name} gave the restaurant a ${rating} star review, and their feedback was: ${feedback}";
+  return `${array[index].name} gave the restaurant a ${array[index].rating} star review, and their feedback was: ${array[index].feedback}`;
 }
 getReviewByIndex(reviews,0);
 
