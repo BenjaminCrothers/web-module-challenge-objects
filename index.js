@@ -105,8 +105,8 @@ Reyna's feedback is missing! Use what you know to do the following: (no function
   2. log the reviews array to the console to check your work
 */
 
-
-
+reviews(reviews[6]);
+console.log(reviews);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -121,9 +121,9 @@ Use the getReviewByIndex function below to do the following:
 
 
 function getReviewByIndex(array,index) {
-  return '${array[index].name} gave the restaurant a ${array[index].rating} star review, and their feedback was: ${array[index].feedback}"';
+  return "${name} gave the restaurant a ${rating} star review, and their feedback was: ${feedback}";
 }
-
+getReviewByIndex(reviews,0);
 
   
 
@@ -139,10 +139,10 @@ Use the getLastReview function below to do the following:
 */
 
 
-function getLastReview(/*Your code here*/) {
-  /*Your code here*/
+function getLastReview(array) {
+  return array-1
 } 
-console.log(getLastReview(reviews,))
+getLastReview(reviews);
 
 
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
