@@ -30,9 +30,9 @@ Test your createMenuItems function by doing the following:
   For example: createMenuItem("pizza",5,"lunch") would return this as the object: {name:"Pizza",price:5,category:"lunch"}
 */
 
-function createMenuItem(name,price,category){
-  return {name,price,category}   
-}
+// function createMenuItem(name,price,category){
+//   return {name,price,category}   
+// }
 createMenuItem("tacos",8,"lunch");
 createMenuItem("pizza",5,"lunch");
 createMenuItem("burgers",7.5,"dinner");
@@ -96,7 +96,7 @@ Using the reviews array above do the following: (no function needed)
 */
 
 // Task 4
-reviews[reviews.length-1].feedback="It was bad."
+reviews.push({name:"Ben",rating:1,feedback:"It was Great"})
 console.log(reviews);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -105,10 +105,8 @@ Reyna's feedback is missing! Use what you know to do the following: (no function
   2. log the reviews array to the console to check your work
 */
 
-function getLastReview(array){
-  return `${array[array.length-1].name} gave the restaurant a ${array[array.length-1].rating} star review, and their feedback was: ${array[array.length-1].feedback}`;
-}
-getLastReview(reviews);
+reviews[reviews.length-1].feedback="this place is chill with really cool people, great for getting work done on weekdays"
+console.log(reviews);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
