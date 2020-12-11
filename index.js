@@ -96,7 +96,7 @@ Using the reviews array above do the following: (no function needed)
 */
 
 // Task 4
-reviews.push({name: "Ben",rating: 1,feedback: "Super Great!"});
+reviews[reviews.length-1].feedback="It was bad."
 console.log(reviews);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -105,8 +105,10 @@ Reyna's feedback is missing! Use what you know to do the following: (no function
   2. log the reviews array to the console to check your work
 */
 
-reviews(reviews[6]);
-console.log(reviews);
+function getLastReview(array){
+  return `${array[array.length-1].name} gave the restaurant a ${array[array.length-1].rating} star review, and their feedback was: ${array[array.length-1].feedback}`;
+}
+getLastReview(reviews);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
